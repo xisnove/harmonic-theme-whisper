@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ post.metadata.title }} - {{ config.title }}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+{% include "partials/navigation.html" %}
+    <body>
+    	<header>
+    	    <h1>
+    	      {{ post.metadata.title }}
+    	    </h1>
+    	</header>
+        <ul>
+        	{% for category in post.metadata.categories %}
+        		<li>
+        			<a class="categoryTag {{ category }}" 
+        				href="/categories/{% if post.metadata.default_lang %}{{ post.metadata.lang }}/{% endif %}{{ category | lower | trim }}">
+        				{{ category }}
+        			</a>
+        		</li>
+        	{% endfor %}
+        </ul>
+
+    	<article>
+    		{{ post.content }}
+    	</article>
+
+    	{% include "partials/footer.html" %}
+    </body>
+</html>
