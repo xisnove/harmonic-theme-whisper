@@ -1,18 +1,19 @@
 {
-  "name": "harmonic-theme-default",
-  "version": "1.1.2",
-  "description": "Default Harmonic theme",
+  "name": "harmonic-theme-whisper",
+  "version": "0.0.1",
+  "description": "Harmonic Theme based on Whisper",
   "keywords": [
-    "harmonictheme"
+    "harmonictheme",
+    "whisper"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/es6rocks/harmonic-theme-default.git"
+    "url": "https://github.com/xisnove/harmonic-theme-whisper.git"
   },
-  "author": "Jaydson Gomes",
+  "author": "Gabriel Pedro",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/es6rocks/harmonic-theme-default/issues"
+    "url": "https://github.com/xisnove/harmonic-theme-whisper/issues"
   },
-  "homepage": "https://github.com/es6rocks/harmonic-theme-default"
+  "homepage": "https://github.com/xisnove/harmonic-theme-whisper"
 }

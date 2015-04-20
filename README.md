@@ -1,7 +1,7 @@
-# harmonic-theme-default
-Default [Harmonic](https://github.com/es6rocks/harmonic) theme
+# harmonic-theme-whisper
+[Harmonic](https://github.com/es6rocks/harmonic) theme based on [Whisper](https://github.com/panphora/whisper) Ghost theme.
 
 Install:
 ```bash
-npm install harmonic-theme-default --save
+npm install harmonic-theme-whisper --save
 ```
