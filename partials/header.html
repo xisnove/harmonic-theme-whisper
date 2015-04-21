@@ -1,24 +1,9 @@
-<header class="topWrap">
-    <nav class="social">
-        <ul class="social__list">
-            <li class="social__item">
-                <a class="social__link" href="https://twitter.com/es6rocks">
-                    {% include "partials/components/twitter.html" %}
-                </a>
-            </li>
-            <li class="social__item">
-                <a class="social__link" href="https://github.com/es6rocks">
-                    {% include "partials/components/github.html" %}
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <section class="lobby">
-        <h1 class="pageTitle">
-            {{ config.title }}
-        </h1>
-        <a href="/">
-            <img class="logo" src="/images/logo.svg" alt="ES6Rocks" />
-        </a>
-    </section>
+<header class="site-head" {% if blog.cover %}style="background-image: url({{ blog.cover }})"{% else %}style="background-image: url(/assets/images/bg.png)"{% endif %}>
+    <div class="vertical">
+        <div class="site-head-content inner">
+            {% if blog.logo %}<a class="blog-logo" href="{{ blog.url }}"><img src="{{ blog.logo }}" alt="Blog Logo" /></a>{% endif %}
+            <h1 class="blog-title"><a href="{{ blog.url }}">{{ blog.title }}</a></h1>
+            <h2 class="blog-description">{{ blog.description }}</h2>
+        </div>
+    </div>
 </header>

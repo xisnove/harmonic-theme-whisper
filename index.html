@@ -1,3 +1,31 @@
+{% extends "default.html" %}
+
+{% block content %}
+{# The main content area on the homepage #}
+<main class="content" role="main">
+
+    {# Each post will be output using this markup #}
+    {% for post in posts %}
+
+    <article class="post">
+        <header class="post-header">
+            <span class="post-meta"><time datetime="{{ post.date }}">{{ post.date }}</time></span>
+            <h2 class="post-title"><a href="{{ post.link }}">{{ post.title }}</a></h2>
+        </header>
+        <section class="post-excerpt">
+            <p>{{ post.content }}&hellip;</p>
+        </section>
+    </article>
+
+    {% endfor %}
+
+</main>
+
+{% endblock %}
+<!--
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -41,4 +69,4 @@
 {% include "partials/footer.html" %}
 
 </body>
-</html>
+</html>-->
